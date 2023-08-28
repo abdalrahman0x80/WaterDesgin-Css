@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction:column;
+  font-size: 1.5em;
+  background:#C4C4C4;
+  
+}
+div{
+    
+   margin:30px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    background:transparent;
+   color:blue;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 3px 3px #00000080,2px 2px 3px #00000080 inset,-2px -3px 40px white inset,2px 3px 10px white,4px 8px 30px #F8F8F8AB;
+    backdrop-filter: blur(1px);
+    background:transparent ;
+    border-radius:30% 70% 58% 42% / 47% 66% 34% 53%  ;
+    
+    
+}
+span{
+    box-shadow:0px 2px 4px 0px white;
+    border-radius:32% 68% 25% 75% / 40% 49% 51% 60% ;
+    width: 10px;
+    height:10px;
+    background:white;
+    backdrop-filter: blur(1px);
+    position: relative;
+    left:-15px;
+    top:-10px;
+}
+.a2{
+    position: relative;
+    left:50px;
+}
+.a1{
+    position: relative;
+    left: -50px;
+    transform:scale(0.5);
+    border-radius:32% 68% 25% 75% / 40% 49% 51% 60%  ;
+
+    
+}
+.a1 span{
+    position: relative;
+    left:20px;
+    top:15px;
+    
+}
+
+div:nth-child(2)::before ,div:nth-child(3)::after{
+    content:"";
+    position: absolute;
+    box-shadow: 2px 3px 3px 3px #00000080,2px 2px 3px #00000080 inset,-2px -3px 4px white inset,2px 3px 10px white,4px 8px 30px #F8F8F8AB;
+    background:transparent;
+    padding:10px;
+    border-radius:50%;
+    top:20px;
+    left:100px;
+}
+
+div:nth-child(1)::before{
+    content:"";
+    position: absolute;
+    box-shadow: 2px 3px 3px 3px #0000006E,2px 2px 3px #00000080 inset,-2px -3px 40px white inset,2px 3px 10px white,4px 8px 30px #F8F8F8AB;
+    background:#FFFFFF36;
+    padding:10px;
+    border-radius:50%;
+    top:100px;
+    left:100px;
+}
+div{
+    position: relative;
+    z-index: 90;
+   
+}
+h1{
+    transform:translate(0%,100px);
+    position: relative;
+    z-index: -90;
+}
+h1 b{
+    position: relative;
+    top:-5px;
+    font-size: 1.1em;
+    transform: rotate(2deg)
+}
